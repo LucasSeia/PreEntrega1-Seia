@@ -16,7 +16,9 @@ function calcularOperacion(num1, num2, operacion) {
   return "El resultado de la operación es: " + resultado;
 }
 
+
 let continuar;
+
 
 do {
   let numero1 = parseFloat(prompt("Ingrese el primer número:"));
