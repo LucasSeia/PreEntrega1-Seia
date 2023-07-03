@@ -70,7 +70,7 @@ function filtrarNombre(jugador){
 }
 
 function filtrarApellido(jugador){
-    if(datosBusqueda.npellido){
+    if(datosBusqueda.apellido){
         return jugador.apellido == datosBusqueda.apellido
     }
     return jugador;
@@ -78,14 +78,14 @@ function filtrarApellido(jugador){
 
 function filtrarClub(jugador){
     if(datosBusqueda.club){
-        return jugador.club >= datosBusqueda.club
+        return jugador.club == datosBusqueda.club
     }
     return jugador;
 }
 
 function filtrarEdad(jugador){
     if(datosBusqueda.edad){
-        return jugador.edad <= datosBusqueda.edad
+        return jugador.edad == datosBusqueda.edad
     }
     return jugador;
 }
