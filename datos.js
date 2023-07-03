@@ -1,14 +1,14 @@
 const seleccionArgentina = [
 	{
 		nombre: 'Emiliano',
-        apellido: 'Martínez',
+        apellido: 'Martinez',
 		club: 'Aston Villa',
 		edad: 30,
 		posicion: 'Arquero',
 		partidosJudados: 7
 	},
 	{ 
-        nombre: 'Gerónimo', 
+        nombre: 'Geronimo', 
         apellido: 'Rulli', 
         club: 'Ajax', 
         edad: 31, 
@@ -72,7 +72,7 @@ const seleccionArgentina = [
 		partidosJudados: 7
 	},
     {
-		nombre: 'Lisandrio',
+		nombre: 'Lisandro',
         apellido: 'Martinez',
 		club: 'Manchester United',
 		edad: 25,
@@ -178,7 +178,7 @@ const seleccionArgentina = [
     {
 		nombre: 'Angel',
         apellido: 'Correa',
-		club: 'Altletico Madrid',
+		club: 'Atletico Madrid',
 		edad: 28,
 		posicion: 'Delantero',
 		partidosJudados: 1
