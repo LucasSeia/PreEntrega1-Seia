@@ -37,7 +37,7 @@ do {
 /* ----------------------------- SEGUNDA PRE-ENTREGA ------------------------------- */
 
 
-let nombre = prompt("Solicitar nombre")
+/* let nombre = prompt("Solicitar nombre")
 let apellido = prompt("Solicitar apellido")
 let club = prompt("Solicitar club")
 let edad = prompt("Solicitar edad")
@@ -118,4 +118,69 @@ function filtrarSeleccion(){
     }
 }
 
-filtrarSeleccion();
+filtrarSeleccion(); */
+
+/* ----------------------------- TERCERA PRE-ENTREGA ------------------------------- */
+
+// Obtener elementos relevantes del DOM
+const inputBusqueda = document.getElementById('search');
+const filtroPosicion = document.getElementById('posicion');
+const jugadores = document.querySelectorAll('.card');
+
+// Agregar un evento de escucha al input de búsqueda y al filtro de posiciones
+inputBusqueda.addEventListener('input', filtrarJugadores);
+filtroPosicion.addEventListener('change', filtrarJugadores);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const searchTerm = localStorage.getItem('searchTerm');
+    const selectedPosition = localStorage.getItem('selectedPosition');
+  
+    if (searchTerm) {
+      inputBusqueda.value = searchTerm;
+    }
+  
+    if (selectedPosition) {
+      filtroPosicion.value = selectedPosition;
+    }
+  
+    filtrarJugadores();
+});
+
+function filtrarJugadores() {
+    const terminoBusqueda = inputBusqueda.value.toLowerCase();
+    const posicionSeleccionada = filtroPosicion.value.toLowerCase();
+    let resultadosEncontrados = false; // Agregamos esta variable para rastrear si se encontraron resultados
+
+    jugadores.forEach(jugador => {
+      const nombreJugador = jugador.querySelector('h4').textContent.toLowerCase();
+      const posicionJugador = jugador.querySelector('.info-card > p:nth-child(4)').textContent.toLowerCase();
+
+      const coincideTermino = nombreJugador.includes(terminoBusqueda);
+      const coincidePosicion = posicionSeleccionada === '' || posicionJugador === posicionSeleccionada;
+
+      if (coincideTermino && coincidePosicion) {
+        jugador.style.display = 'block';
+        resultadosEncontrados = true; // Marcamos que se encontraron resultados
+      } else {
+        jugador.style.display = 'none';
+      }
+    });
+
+    // Mostrar alerta si no se encontraron resultados
+    if (!resultadosEncontrados) {
+      Swal.fire({
+        icon: "warning",
+        title: "No se encontraron resultados",
+        text: "Inténtalo con otra búsqueda.",
+        confirmButtonColor: "#007bff",
+      });
+    }
+
+    localStorage.setItem('searchTerm', terminoBusqueda);
+    localStorage.setItem('selectedPosition', posicionSeleccionada);
+}
+
+
+
+
+

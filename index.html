@@ -3,29 +3,388 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre Entrega 2 - Seia</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pre Entrega 3 - Seia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortchut icon" href="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690216265/afa3estrellas_devgzz.png">
 </head>
 <body>
-    <h1>Selección Campeona del Mundo 2022</h1>
+    <header>
+        <h1>Selección Campeona del Mundo 2022</h1>
+    </header>
+    <div class="lista-jugadores">
+        <!-- Aquí se generarán los jugadores -->    
+        <div class="argentina">
+            <img src="https://resizer.glanacion.com/resizer/hS6Del5Brh9Yx4srSxN6MiE4hjk=/1200x800/smart/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/IMB4L42ZQZGAFAKNU5DCXWUZOA.JPG" alt="Seleccion Argentina">
+        </div>
+        <div class="filtro-posicion">
+            <label for="posicion">Filtrar por posición:</label>
+            <select id="posicion">
+              <option value="">Todas</option>
+              <option value="Arquero">Arquero</option>
+              <option value="Defensor">Defensor</option>
+              <option value="Mediocentro">Mediocentro</option>
+              <option value="Delantero">Delantero</option>
+              <option value="Tecnico">Tecnico</option>
+            </select>
+        </div>
+          
+        <!-- Campo de búsqueda -->
+        <input type="text" id="search" placeholder="Buscar jugador...">
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690207851/5e1dd3fb7a37e8e528a6e4b32a8d51d1fc767770_zlvwxy.jpg" alt="Franco Armani" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Franco Armani</h4>
+                        <p>River Plate</p>
+                        <p>36 años</p>
+                        <p>Arquero</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
 
-    <p>"La selección argentina del 2022, campeona del mundo, no solo conquistó títulos y trofeos, sino también los corazones de millones de personas en todo el mundo. Cada jugador, con su habilidad y pasión, escribió un capítulo inolvidable en la historia del fútbol argentino.
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208713/image_15.png_1474674777_ye4cqx.png" alt="Juan Foyth" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Juan Foyth</h4>
+                        <p>Villareal</p>
+                        <p>25 años</p>
+                        <p>Defensor</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
 
-        Desde el inquebrantable liderazgo de su capitán, que inspiró a cada uno de sus compañeros, hasta la magia desbordante de sus delanteros, que desafiaron las defensas rivales con cada toque de balón, la selección argentina dejó una marca imborrable en el torneo.
-        
-        La selección argentina del 2022 nos recordó que el fútbol es mucho más que goles y victorias. Es la pasión desbordante que despierta en cada hincha, la alegría compartida en cada gol, la emoción indescriptible de ver a nuestros colores representados en lo más alto. Fue un sueño hecho realidad, un viaje lleno de emociones que nos unió como país y nos dejó un legado de inspiración y orgullo.
-        
-        Hoy, recordamos con cariño cada momento mágico, cada abrazo efusivo, cada lágrima de felicidad. La selección argentina del 2022, campeona del mundo, siempre será un símbolo de lucha, perseverancia y triunfo. Gracias por llevarnos en cada jugada, por representarnos con honor y por hacernos soñar. ¡Somos eternamente agradecidos y siempre llevaremos en nuestros corazones los colores de la gloria!"</p>
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690207895/a5719cc2710319560bfc510cacd53315402fee82_h2p48g.jpg" alt="Nicolas Tagliafico" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Nicolas Tagliafico</h4>
+                        <p>Olympique Lyon</p>
+                        <p>30 años</p>
+                        <p>Defensor</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208729/image_18.png_1412306731_vplsmt.png" alt="Gonzalo Montiel" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Gonzalo Montiel</h4>
+                        <p>Sevilla</p>
+                        <p>26 años</p>
+                        <p>Defensor</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
 
-    <div class="argentina">
-        <img src="https://resizer.glanacion.com/resizer/hS6Del5Brh9Yx4srSxN6MiE4hjk=/1200x800/smart/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/IMB4L42ZQZGAFAKNU5DCXWUZOA.JPG" alt="Seleccion Argentina">
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690207886/9aaf5ff6151aae3ba9c858b0855896ee51029cdc_qhrzdb.jpg" alt="Leandro Paredes" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Leandro Paredes</h4>
+                        <p>PSG</p>
+                        <p>29 años</p>
+                        <p>Mediocentro</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208747/image_19.png_1412306731_ad421n.png" alt="German Pezzella" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>German Pezzella</h4>
+                        <p>Real Betis</p>
+                        <p>32 años</p>
+                        <p>Defensor</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690207861/849cd0dac238f8dcf326a8ff0338776d52f969fb_kiwd14.jpg" alt="Rodrigo de Paul" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Rodrigo de Paul</h4>
+                        <p>Atletico Madrid</p>
+                        <p>29 años</p>
+                        <p>Mediocentro</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208762/image_13.png_670246416_jigwvr.png" alt="Marcos Acuña" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Marcos Acuña</h4>
+                        <p>Sevilla</p>
+                        <p>31 años</p>
+                        <p>Defensor</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208783/image_11.png_1184142182_jtz9na.png" alt="Julian Alvarez" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Julian Alvarez</h4>
+                        <p>Manchester City</p>
+                        <p>23 años</p>
+                        <p>Delantero</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208801/image_7.png_1845347327_lpv0ta.png" alt="Lionel Messi" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Lionel Messi</h4>
+                        <p>Inter Miami</p>
+                        <p>36 años</p>
+                        <p>Delantero</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208897/image_6.png_1019755444_guxpid.png" alt="Angel Di Maria" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Angel Di Maria</h4>
+                        <p>Benfica</p>
+                        <p>35 años</p>
+                        <p>Delantero</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208906/image_21.png_112087870_hpid6e.png" alt="Geronimo Rulli" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Geronimo Rulli</h4>
+                        <p>Ajax</p>
+                        <p>31 años</p>
+                        <p>Arquero</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690207878/323809a241f85b3fcf1ff4199fc352e945b7b8f1_wmk3ub.jpg" alt="Cristian Romero" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Cristian Romero</h4>
+                        <p>Tottenham Hotspur</p>
+                        <p>25 años</p>
+                        <p>Defensor</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209020/image_22.png_112087870_ywdjmn.png" alt="Exequiel Palacios" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Exequiel Palacios</h4>
+                        <p>Bayer Leverkusen</p>
+                        <p>24 años</p>
+                        <p>Mediocentro</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209036/image_23.png_275397518_wtrpg4.png" alt="Angel Correa" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Angel Correa</h4>
+                        <p>Atletico Madrid</p>
+                        <p>28 años</p>
+                        <p>Delantero</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209045/image_24.png_1412306731_ijqsrc.png" alt="Thiago Almada" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Thiago Almada</h4>
+                        <p>Atlanta United</p>
+                        <p>22 años</p>
+                        <p>Delantero</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209058/image_25.png_276321039_mbhvzs.png" alt="Alejandro Gomez" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Alejandro Gomez</h4>
+                        <p>Sevilla</p>
+                        <p>35 años</p>
+                        <p>Mediocentro</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209068/image_26.png_1412306731_scq662.png" alt="Guido Rodriguez" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Guido Rodriguez</h4>
+                        <p>Real Betis</p>
+                        <p>29 años</p>
+                        <p>Mediocentro</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209076/image_27.png_1504227449_t42kmg.png" alt="Nicolas Otamendi" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Nicolas Otamendi</h4>
+                        <p>Benfica</p>
+                        <p>35 años</p>
+                        <p>Defensor</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209087/image_28.png_196020716_nb1o9f.png" alt="Alexis Mac Allister" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Alexis Mac Allister</h4>
+                        <p>Liverpool</p>
+                        <p>24 años</p>
+                        <p>Mediocentro</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209099/image_8.png_141532977_ab2uma.png" alt="Paulo Dybala" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Paulo Dybala</h4>
+                        <p>Roma</p>
+                        <p>29 años</p>
+                        <p>Delantero</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209107/image_12.png_276321039_vlez52.png" alt="Lautaro Martinez" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Lautaro Martinez</h4>
+                        <p>Inter</p>
+                        <p>25 años</p>
+                        <p>Delantero</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690207839/00f97e8b0914b5eb213f1d7931ad6cda2bc51ec9_h0ptjt.jpg" alt="Emiliano Martinez" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Emiliano Martinez</h4>
+                        <p>Aston Villa</p>
+                        <p>30 años</p>
+                        <p>Arquero</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209335/Fh9TlswWAAI7HvP_eayj8o.jpg" alt="Lisandro Martinez" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Lisandro Martinez</h4>
+                        <p>Manchester United</p>
+                        <p>25 años</p>
+                        <p>Defensor</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209127/image_31.png_662185772_sjjeri.png" alt="Nahuel Molina" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Nahuel Molina</h4>
+                        <p>Atletico Madrid</p>
+                        <p>25 años</p>
+                        <p>Defensor</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690223370/image_5.png_276321039_jmrluz.png" alt="Lionel Scaloni" class="imagen-jugador u-full-width">
+                    <div class="info-card">
+                        <h4>Lionel Scaloni</h4>
+                        <p>Seleccion Argentina</p>
+                        <p>45 años</p>
+                        <p>Tecnico</p>
+                    </div>
+                </div>
+                <!-- card -->
+            </div>
+        </div>
     </div>
 
-    <p id="mensaje">Jugadores Encontrados</p>
+    <div class="escudo">
+        <img src="https://res.cloudinary.com/dzcaubqdr/image/upload/v1690216265/afa3estrellas_devgzz.png" alt="Escudo Seleccion Argentina">
+    </div>
 
-
-
-    <script src="datos.js"></script>
-    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+    <script src="js/datos.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

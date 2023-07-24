@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #369;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: rgb(244, 209, 143);
+    margin: 30px 0;
+}
+
+.argentina img {
+    margin: auto;
+    margin-bottom: 40px;
+    width: 60%;
+    height: 50%;
+}
+  
+.lista-jugadores {
+    text-align: center;
+}
+  
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+  
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+  
+.imagen-jugador {
+    width: 50%;
+    height: 300px; /* Tamaño fijo para las imágenes */
+    object-fit: contain; /* Mantener la proporción de aspecto */
+    transition: transform 0.3s ease;
+}
+
+.imagen-jugador:hover {
+    transform: scale(1.05); /* Escala la imagen al 110% del tamaño original al hacer hover */
+}
+  
+.info-card h4 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: rgb(203, 157, 72)
+}
+  
+.info-card p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 5px 0;
+}
+
+/* Estilo del campo de búsqueda */
+#search {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+  
+/* Estilo del campo de búsqueda cuando está enfocado */
+#search:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo del contenedor del filtro de posiciones */
+.filtro-posicion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+  
+/* Estilo del label */
+.filtro-posicion label {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: rgb(235, 195, 121);
+}
+  
+/* Estilo del select */
+.filtro-posicion select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+  
+/* Estilo de las opciones del select */
+.filtro-posicion select option {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.escudo {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+  
+.escudo img {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .row {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+  
+    .imagen-jugador {
+      width: 60%;
+      height: 250px;
+    }
+  
+    .info-card h4 {
+      font-size: 1.3rem;
+    }
+  
+    .info-card p {
+      font-size: 1.1rem;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+    .row {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  
+    .imagen-jugador {
+      width: 50%;
+      height: 300px;
+    }
+  
+    .info-card h4 {
+      font-size: 1.5rem;
+    }
+  
+    .info-card p {
+      font-size: 1.2rem;
+    }
+}
