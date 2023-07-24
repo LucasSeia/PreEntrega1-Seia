@@ -127,7 +127,6 @@ const inputBusqueda = document.getElementById('search');
 const filtroPosicion = document.getElementById('posicion');
 const jugadores = document.querySelectorAll('.card');
 
-// Agregar un evento de escucha al input de búsqueda y al filtro de posiciones
 inputBusqueda.addEventListener('input', filtrarJugadores);
 filtroPosicion.addEventListener('change', filtrarJugadores);
 
@@ -149,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function filtrarJugadores() {
     const terminoBusqueda = inputBusqueda.value.toLowerCase();
     const posicionSeleccionada = filtroPosicion.value.toLowerCase();
-    let resultadosEncontrados = false; // Agregamos esta variable para rastrear si se encontraron resultados
+    let resultadosEncontrados = false; // Agrego esta variable para rastrear si se encontraron resultados
 
     jugadores.forEach(jugador => {
       const nombreJugador = jugador.querySelector('h4').textContent.toLowerCase();
@@ -160,13 +159,12 @@ function filtrarJugadores() {
 
       if (coincideTermino && coincidePosicion) {
         jugador.style.display = 'block';
-        resultadosEncontrados = true; // Marcamos que se encontraron resultados
+        resultadosEncontrados = true; // Marco que se encontraron resultados
       } else {
         jugador.style.display = 'none';
       }
     });
 
-    // Mostrar alerta si no se encontraron resultados
     if (!resultadosEncontrados) {
       Swal.fire({
         icon: "warning",
