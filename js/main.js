@@ -73,7 +73,7 @@ function filtrarJugadores() {
     }
   });
 
-  if (!resultadosEncontrados) {
+  if (!resultadosEncontrados && (terminoBusqueda || posicionSeleccionada)) {
     Swal.fire({
       icon: "warning",
       title: "No se encontraron resultados",
