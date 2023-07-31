@@ -1,0 +1,193 @@
+{
+  "seleccion": "Argentina",
+  "jugadores": [
+    {
+      "nombre": "Franco Armani",
+      "equipo": "River Plate",
+      "edad": 36,
+      "posicion": "Arquero",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690207851/5e1dd3fb7a37e8e528a6e4b32a8d51d1fc767770_zlvwxy.jpg"
+    },
+    {
+      "nombre": "Juan Foyth",
+      "equipo": "Villarreal",
+      "edad": 25,
+      "posicion": "Defensor",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208713/image_15.png_1474674777_ye4cqx.png"
+    },
+    {
+      "nombre": "Nicolas Tagliafico",
+      "equipo": "Olympique Lyon",
+      "edad": 30,
+      "posicion": "Defensor",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690207895/a5719cc2710319560bfc510cacd53315402fee82_h2p48g.jpg"
+    },
+    {
+      "nombre": "Gonzalo Montiel",
+      "equipo": "Sevilla",
+      "edad": 26,
+      "posicion": "Defensor",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208729/image_18.png_1412306731_vplsmt.png"
+    },
+    {
+      "nombre": "Leandro Paredes",
+      "equipo": "PSG",
+      "edad": 29,
+      "posicion": "Mediocentro",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690207886/9aaf5ff6151aae3ba9c858b0855896ee51029cdc_qhrzdb.jpg"
+    },
+    {
+      "nombre": "German Pezzella",
+      "equipo": "Real Betis",
+      "edad": 32,
+      "posicion": "Defensor",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208747/image_19.png_1412306731_ad421n.png"
+    },
+    {
+      "nombre": "Rodrigo de Paul",
+      "equipo": "Atletico Madrid",
+      "edad": 29,
+      "posicion": "Mediocentro",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690207861/849cd0dac238f8dcf326a8ff0338776d52f969fb_kiwd14.jpg"
+    },
+    {
+      "nombre": "Marcos Acuña",
+      "equipo": "Sevilla",
+      "edad": 31,
+      "posicion": "Defensor",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208762/image_13.png_670246416_jigwvr.png"
+    },
+    {
+      "nombre": "Julian Alvarez",
+      "equipo": "Manchester City",
+      "edad": 23,
+      "posicion": "Delantero",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208783/image_11.png_1184142182_jtz9na.png"
+    },
+    {
+      "nombre": "Lionel Messi",
+      "equipo": "Paris Saint-Germain",
+      "edad": 34,
+      "posicion": "Delantero",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208801/image_7.png_1845347327_lpv0ta.png"
+    },
+    {
+      "nombre": "Angel Di Maria",
+      "equipo": "Benfica",
+      "edad": 33,
+      "posicion": "Delantero",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208897/image_6.png_1019755444_guxpid.png"
+    },
+    {
+      "nombre": "Geronimo Rulli",
+      "equipo": "Ajax",
+      "edad": 29,
+      "posicion": "Arquero",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690208906/image_21.png_112087870_hpid6e.png"
+    },
+    {
+      "nombre": "Cristian Romero",
+      "equipo": "Tottenham Hotspur",
+      "edad": 24,
+      "posicion": "Defensor",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690207878/323809a241f85b3fcf1ff4199fc352e945b7b8f1_wmk3ub.jpg"
+    },
+    {
+      "nombre": "Exequiel Palacios",
+      "equipo": "Bayer Leverkusen",
+      "edad": 24,
+      "posicion": "Mediocentro",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209020/image_22.png_112087870_ywdjmn.png"
+    },
+    {
+      "nombre": "Angel Correa",
+      "equipo": "Atletico Madrid",
+      "edad": 28,
+      "posicion": "Delantero",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209036/image_23.png_275397518_wtrpg4.png"
+    },
+    {
+      "nombre": "Thiago Almada",
+      "equipo": "Atlanta United",
+      "edad": 22,
+      "posicion": "Delantero",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209045/image_24.png_1412306731_ijqsrc.png"
+    },
+    {
+      "nombre": "Alejandro Gomez",
+      "equipo": "Sevilla",
+      "edad": 35,
+      "posicion": "Mediocentro",
+      "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209058/image_25.png_276321039_mbhvzs.png"
+    },
+    {
+        "nombre": "Guido Rodriguez",
+        "equipo": "Real Betis",
+        "edad": 29,
+        "posicion": "Mediocentro",
+        "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209068/image_26.png_1412306731_scq662.png"
+    },
+    {
+        "nombre": "Nicolas Otamendi",
+        "equipo": "Benfica",
+        "edad": 35,
+        "posicion": "Defensor",
+        "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209076/image_27.png_1504227449_t42kmg.png"
+    },
+    {
+        "nombre": "Alexis Mac Allister",
+        "equipo": "Liverpool",
+        "edad": 24,
+        "posicion": "Mediocentro",
+        "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209087/image_28.png_196020716_nb1o9f.png"
+    },
+    {
+        "nombre": "Paulo Dybala",
+        "equipo": "Roma",
+        "edad": 29,
+        "posicion": "Delantero",
+        "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690225923/image_8.png_141532977_lmwt52.png"
+    },
+    {
+        "nombre": "Lautaro Martinez",
+        "equipo": "Inter",
+        "edad": 25,
+        "posicion": "Delantero",
+        "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209107/image_12.png_276321039_vlez52.png"
+    },
+    {
+        "nombre": "Emiliano Martinez",
+        "equipo": "Aston Villa",
+        "edad": 30,
+        "posicion": "Arquero",
+        "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690207839/00f97e8b0914b5eb213f1d7931ad6cda2bc51ec9_h0ptjt.jpg"
+    },
+    {
+        "nombre": "Enzo Fernandez",
+        "equipo": "Chelsea",
+        "edad": 22,
+        "posicion": "Mediocentro",
+        "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690810283/a8f7211dfe841ad479ea83e24d81de7d_xke45c.jpg"
+    },
+    {
+        "nombre": "Lisandro Martinez",
+        "equipo": "Manchester United",
+        "edad": 25,
+        "posicion": "Defensor",
+        "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209335/Fh9TlswWAAI7HvP_eayj8o.jpg"
+    },
+    {
+        "nombre": "Nahuel Molina",
+        "equipo": "Atletico Madrid",
+        "edad": 25,
+        "posicion": "Defensor",
+        "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690209127/image_31.png_662185772_sjjeri.png"
+    },
+    {
+        "nombre": "Lionel Scaloni",
+        "equipo": "Selección Argentina",
+        "edad": 45,
+        "posicion": "Técnico",
+        "imagen": "https://res.cloudinary.com/dzcaubqdr/image/upload/v1690223370/image_5.png_276321039_jmrluz.png"
+    }]
+}
