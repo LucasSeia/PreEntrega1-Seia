@@ -29,9 +29,13 @@ function cargarJugadores() {
 }
 
 function mostrarJugadores(jugadores) {
-  jugadores.forEach(jugador => {
+  jugadoresContainer.innerHTML = '';
+
+  for (let i = 0; i < jugadores.length; i++) {
+    const jugador = jugadores[i];
+
     const jugadorCard = document.createElement('div');
-    jugadorCard.className = 'card'; 
+    jugadorCard.className = 'card';
     jugadorCard.innerHTML = `
       <div class="card">
         <img src="${jugador.imagen}" alt="${jugador.nombre}" class="imagen-jugador">
@@ -43,10 +47,10 @@ function mostrarJugadores(jugadores) {
         </div>
       </div>
     `;
-    jugadoresContainer.appendChild(jugadorCard);
-  });
 
-  
+    jugadoresContainer.appendChild(jugadorCard);
+  }
+
   jugadoresContainer.classList.add('grid-container');
 }
 
